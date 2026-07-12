@@ -17,7 +17,14 @@ public class KomadoScaleSettings : ScriptableObject
 
         KomadoScaleSettings newSettings = CreateInstance<KomadoScaleSettings>();
 
-        AssetDatabase.CreateAsset(newSettings, "Assets/KRHa's Assets/KomadoScaleAdjustor/Editor/KomadoScaleSettings.asset");
+        // このスクリプト自身の GUID から配置フォルダを特定し、その隣に .asset を作成する。
+        // これによりフォルダを移動・リネームしてもパスがずれてエラーになることがない。
+        MonoScript script = MonoScript.FromScriptableObject(newSettings);
+        string scriptPath = AssetDatabase.GetAssetPath(script);
+        string directory = scriptPath.Substring(0, scriptPath.LastIndexOf('/'));
+        string assetPath = directory + "/KomadoScaleSettings.asset";
+
+        AssetDatabase.CreateAsset(newSettings, assetPath);
         AssetDatabase.SaveAssets();
         
         return newSettings;
