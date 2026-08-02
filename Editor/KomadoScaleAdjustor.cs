@@ -40,50 +40,29 @@ public class KomadoScaleAdjustor : Editor
     }
 
     // ==========================================
-    // 変換元：Chocolat（ショコラ）
+    // 変換元：Chiffon（シフォン）・Chocolat（ショコラ）
     // ==========================================
-    [MenuItem("GameObject/KomadoScaleAdjustor/From Chocolat/To Chiffon (x1.000)", false, 0)]
-    public static void ChocolatToChiffon() => ApplyScale(1.000f);
+    [MenuItem("GameObject/KomadoScaleAdjustor/From Chiffon & Chocolat/To Plum (x1.051)", false, 0)]
+    public static void ChiffonAndChocolatToPlum() => ApplyScale(1.051f);
 
-    [MenuItem("GameObject/KomadoScaleAdjustor/From Chocolat/To Plum (x1.051)", false, 1)]
-    public static void ChocolatToPlum() => ApplyScale(1.051f);
-
-    [MenuItem("GameObject/KomadoScaleAdjustor/From Chocolat/To Lime (x1.115)", false, 2)]
-    public static void ChocolatToLime() => ApplyScale(1.115f);
-
-    // ==========================================
-    // 変換元：Chiffon（シフォン）
-    // ==========================================
-    [MenuItem("GameObject/KomadoScaleAdjustor/From Chiffon/To Chocolat (x1.000)", false, 10)]
-    public static void ChiffonToChocolat() => ApplyScale(1.000f);
-
-    [MenuItem("GameObject/KomadoScaleAdjustor/From Chiffon/To Plum (x1.051)", false, 11)]
-    public static void ChiffonToPlum() => ApplyScale(1.051f);
-
-    [MenuItem("GameObject/KomadoScaleAdjustor/From Chiffon/To Lime (x1.115)", false, 12)]
-    public static void ChiffonToLime() => ApplyScale(1.115f);
+    [MenuItem("GameObject/KomadoScaleAdjustor/From Chiffon & Chocolat/To Lime (x1.115)", false, 1)]
+    public static void ChiffonAndChocolatToLime() => ApplyScale(1.115f);
 
     // ==========================================
     // 変換元：Plum（プラム）
     // ==========================================
-    [MenuItem("GameObject/KomadoScaleAdjustor/From Plum/To Chocolat (x0.9512)", false, 20)]
-    public static void PlumToChocolat() => ApplyScale(0.9512f);
+    [MenuItem("GameObject/KomadoScaleAdjustor/From Plum/To Chiffon & Chocolat (x0.9512)", false, 10)]
+    public static void PlumToChiffonAndChocolat() => ApplyScale(0.9512f);
 
-    [MenuItem("GameObject/KomadoScaleAdjustor/From Plum/To Chiffon (x0.9512)", false, 21)]
-    public static void PlumToChiffon() => ApplyScale(0.9512f);
-
-    [MenuItem("GameObject/KomadoScaleAdjustor/From Plum/To Lime (x1.061)", false, 22)]
+    [MenuItem("GameObject/KomadoScaleAdjustor/From Plum/To Lime (x1.061)", false, 11)]
     public static void PlumToLime() => ApplyScale(1.061f);
 
     // ==========================================
     // 変換元：Lime（ライム）
     // ==========================================
-    [MenuItem("GameObject/KomadoScaleAdjustor/From Lime/To Chocolat (x0.8965)", false, 30)]
-    public static void LimeToChocolat() => ApplyScale(0.8965f);
+    [MenuItem("GameObject/KomadoScaleAdjustor/From Lime/To Chiffon & Chocolat (x0.8965)", false, 20)]
+    public static void LimeToChiffonAndChocolat() => ApplyScale(0.8965f);
 
-    [MenuItem("GameObject/KomadoScaleAdjustor/From Lime/To Chiffon (x0.8965)", false, 31)]
-    public static void LimeToChiffon() => ApplyScale(0.8965f);
-
-    [MenuItem("GameObject/KomadoScaleAdjustor/From Lime/To Plum (x0.9425)", false, 32)]
+    [MenuItem("GameObject/KomadoScaleAdjustor/From Lime/To Plum (x0.9425)", false, 21)]
     public static void LimeToPlum() => ApplyScale(0.9425f);
 }
